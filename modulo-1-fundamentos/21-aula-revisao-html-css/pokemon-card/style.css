@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 50px 50px;
+  padding: 1.438rem;
+  width: 27.5rem;
+  height: 13.125rem;
+  background-color: #729f92;
+  border-radius: 0.75rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.pokeball {
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+
+.pokemon {
+  position: absolute;
+  top: -50px;
+  right: 12px;
+}
+
+.detalhes {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  /* flex-direction: row; */
+  /* border: 2px solid black; */
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detalhes > button {
+  width: 9.125rem;
+  height: 2.375rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* A mudança do cursor não está funcionando. */

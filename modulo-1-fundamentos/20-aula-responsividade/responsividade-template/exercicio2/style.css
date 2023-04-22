@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 33vw);
+  grid-template-rows: 40vh 40vh;
+}
+
+section {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 575px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    color: red;
+  }
+}
