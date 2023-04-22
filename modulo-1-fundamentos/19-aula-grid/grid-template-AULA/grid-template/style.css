@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 
+EXERCÍCIO 1:
+- Implemente um Header seguindo o layout ao lado utilizando grid
+- Garanta que o logo e o botão estão centralizados verticalmente
+ */
+
+header{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    height: 50px;
+    align-items: center;
+    justify-items: center;
+}
+/* O :last-child é um pseudo seletor que seleciona a última filha da section e o grid-column coloca na coluna 3 */
+section:last-child{
+    grid-column: 3;
+}
+
+footer{
+    border: 1px solid black;
+    display: grid;
+    align-items: center;
+}
+
+
+/* 
+EXERCÍCIO 2:
+- Utilizando o Header do exercício anterior, implemente a página ao lado que possui:
+    - Header
+    - Conteúdo
+    - Footer
+*/
+div{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vw 1fr 50px;
+}
+
+/* 
+EXERCÍCIO 4:
+- Utilizando o site do exercício anterior, implemente na sua página:
+- Menus laterais na esquerda e na direita do conteúdo principal
+*/
+main{
+    display: grid;
+    grid-template-columns: 3fr 7fr 2fr;
+}
+
+
+/* 
+EXERCÍCIO DE FIXAÇÃO:
+
+- Utilizando o site do exercício anterior, implemente na sua página:
+    - Faça com que esses cards quebrem a linha caso falte espaço disponível
+    - É obrigatório estarem num container com display grid
+*/
+.gallery{
+    display: grid;
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* grid-template-rows: 1fr 1fr; */
+    grid-gap: 8px;
+}
